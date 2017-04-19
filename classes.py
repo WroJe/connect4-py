@@ -9,8 +9,15 @@ class Board:
     """
     def __init__(self):
         pass #get rid of this
-    def draw-Board(self, columns, rows)
+
+    boardColumns = 6
+    boardRows = 7
     """Board is 6 collumns 7 rows"""
+
+    def tracking-Board(self):
+
+
+    def draw-Board(self)
 
 class Player:
     """
@@ -22,7 +29,9 @@ class Player:
     def __init__(self):
 
     """  """
-
+    def main-menu(self)
+        print("Welcome to... %s".center(80))
+        print("C O N N E C T  F O U R %s".center(80) % vcount)
 class Piece:
     """
     responsibilities:
