@@ -9,7 +9,7 @@ class Board:
     """
     def __init__(self):
         pass #get rid of this
-    def draw-Board(self, col, rows)
+    def draw-Board(self, columns, rows)
     """Board is 6 collumns 7 rows"""
 
 class Player:
