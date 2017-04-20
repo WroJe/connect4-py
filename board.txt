@@ -1,0 +1,24 @@
+x x x x x x x 1
+X Axis -
+Y Axis |
+
+x x x x x x x 2
+x x x x x x x 3
+x x x x x x x 4
+x x x x x x x 5
+x x x x x x x 6
+A B C D E F G
+
+Alphanumerical markers are the only board
+markings the  player will interact with.
+Numerical markers are for the program to
+determine where 4 
+
+Dictionary of lists
+
+d = {
+	'A': [, , , , , ],
+	'B': [, , , , , ],
+	...
+}
+d['B'][2] #move
