@@ -3,7 +3,6 @@ import random
 class Board:
     """
     responsibilities:
-
     * Retain Piece info
     * Tracking Red and Yellow piece positions
     * Board is 6 columns 7 rows
@@ -57,5 +56,14 @@ class Player:
             return self.take_turn()
 
 class Menu:
-    def __init__(sels):
+    def __init__(self):
         user-place = 0
+
+    def mainMenu(self):
+        print("Welcome to Connect4.py!")
+        print("written by Jeffrey 'wroje' Wrobel")
+        mainManuInput = input(print("1. Play! \n 2. About"))
+
+
+class Illustrator:
+    def __init__(self, board)
