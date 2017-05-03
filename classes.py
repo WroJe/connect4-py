@@ -1,5 +1,7 @@
 import random
 
+gameWon = False
+
 class Board:
     """
     responsibilities:
@@ -10,7 +12,6 @@ class Board:
     def __init__(self):
         # self.boardColumns = 6
         self.boardRows = 7
-
         self.pieces = {
             'a': [],
             'b': [],
@@ -29,10 +30,10 @@ class Board:
         pass
 
     def play(self, column, piece):
-        if len(self.board[column]) == self.boardRows:
+        if len(self.board[column]) == self.boardRows: #checking to see if the column is full
             return False
         self.board[column].append(piece)
-        return True
+            return True
 
 class Piece:
     """  """
@@ -47,23 +48,17 @@ class Player:
         self.board = board
 
     def take_turn(self):
-        choice = input('Which column do  you choose?')
-
+        """
+        Taking player input on which column they wish to put their piece in
+        Appending the list of that input, and  returning an error if it doesn't exist
+        """
+        choice = input('Which column do you wish to drop your piece in? \n a, b, c, d, e, f, or g?')
         if self.board.play(choice):
             return
         else:
-            print('Youo cant go there')
+            print("You can't go there")
             return self.take_turn()
 
-class Menu:
-    def __init__(self):
-        user-place = 0
-
-    def mainMenu(self):
-        print("Welcome to Connect4.py!")
-        print("written by Jeffrey 'wroje' Wrobel")
-        mainManuInput = input(print("1. Play! \n 2. About"))
-
-
 class Illustrator:
-    def __init__(self, board)
+    def __init__(self, board):
+        pass
